@@ -1,0 +1,5 @@
+@media (min-width: $desktop-min-width) {
+  .centering {
+    @include desktop-centering;
+  }
+}
