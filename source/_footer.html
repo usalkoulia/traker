@@ -1,3 +1,57 @@
-<footer>
-  footer
+<footer class="footer">
+  <div class="footer__wrapper centering">
+
+    <nav class="footer__navigation footer-navigation">
+      <ul class="footer-navigation__list">
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="#">Docs</a>
+        </li>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="#">Agile Blog</a>
+        </li>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="#">Privacy policy</a>
+        </li>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="#">Terms of service</a>
+        </li>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="#">Cookie Policy</a>
+        </li>
+      </ul>
+    </nav>
+
+    <form class="footer__form subscription" action="index.html" method="post">
+      <label class="subscription__label" for="Email">Subscribe on newsletters</label>
+      <div class="subscription__wrapper">
+        <input class="subscription__input" type="text" name="Email" placeholder="Your email" id="Email">
+        <button class="subscription__submit" type="submit" name="button">Subscribe!</button>
+      </div>
+    </form>
+
+    <div class="footer__contact">
+      <h3 class="footer__title">Contact us</h3>
+      <button class="footer__button" type="button" name="button">Drop a line</button>
+    </div>
+
+    <div class="footer__social social">
+      <h3 class="footer__title">Follow us</h3>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#" target="_blank" rel="noopener" aria-label="Riter in facebook"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" target="_blank" rel="noopener" aria-label="Riter in twitter"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" target="_blank" rel="noopener" aria-label="Riter in medium"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" target="_blank" rel="noopener" aria-label="Riter in dev"></a>
+          </li>
+        </ul>
+    </div>
+
+    <p class="footer__copyright">© 2018 Riter / v0.15.8</p>
+  </div>
 </footer>

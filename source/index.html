@@ -3,18 +3,58 @@
   <head>
     <meta charset="utf-8">
     <title>Демо-страница</title>
-    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js" async></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div style="display: none">
+    <!-- <div style="display: none">
       <include src="build/img/sprite.svg"></include>
-    </div>
+    </div> -->
+
+    <header class="header">
+      <div class="header__wrapper centering">
+
+        <a class="header__logo" href="#">Riter <sup>&beta;</sup></a>
+
+        <button class="header__toggle" type="button" name="button" aria-label="open menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </button>
+
+        <nav class="header__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Docs</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Product</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Features</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Prices</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Agile Blog</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Contact us</a>
+            </li>
+          </ul>
+          <ul class="navigation__list navigation__list--user">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Sign In</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
     <main>
-      main
+      <!-- main -->
     </main>
     <include src="source/_footer.html"></include>
     <script src="js/main.js"></script>

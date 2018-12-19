@@ -1,8 +1,18 @@
 @import "variables";
-@import "fonts";
 @import "mixins";
 @import "centering";
 @import "visually-hidden";
+@import "header";
+@import "navigation";
+@import "footer";
+@import "footer-navigation";
+@import "subscription";
+
+body {
+  background-color: $bg-color;
+  font-family: monospace;
+  color: $primary-font-color;
+}
 
 img {
   max-width: 100%;

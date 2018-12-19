@@ -1,0 +1,26 @@
+.footer__wrapper {
+  padding: 15px;
+  color: $secondary-font-color;
+}
+
+.footer-navigation__list,
+.social__list {
+  list-style-type: none;
+}
+
+.footer__title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+
+.footer__button {
+  background-color: #515151;
+  border: none;
+  color: $secondary-font-color;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 25px;
+  border-radius: 4px;
+}
