@@ -1,0 +1,35 @@
+.title {
+  font-family: $primary-font;
+  font-weight: 300;
+  color: $primary-font-color;
+
+  &--big {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  &--medium {
+    font-size: 28px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+
+  &--small {
+    font-size: 23px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .title {
+    &--big {
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    &--medium {
+      font-size: 36px;
+      line-height: 40px;
+    }
+  }
+}

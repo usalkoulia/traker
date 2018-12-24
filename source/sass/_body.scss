@@ -1,0 +1,9 @@
+.body {
+  background-color: $bg-color;
+  font-family: $primary-font;
+  color: $primary-font-color;
+  font-weight: 300;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}

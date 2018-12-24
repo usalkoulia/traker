@@ -13,6 +13,7 @@
 .header__logo {
   text-decoration: none;
   color: $primary-font-color;
+  white-space: nowrap;
 
   sup {
     color: $primary-color;
@@ -32,4 +33,25 @@
 .header__navigation {
   padding-top: 20px;
   width: 100%;
+}
+
+@media (min-width: $tablet-min-width) {
+  .header__wrapper {
+    padding: 20px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .header__wrapper {
+    padding: 45px 20px;
+    flex-wrap: nowrap;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+
+  .header__navigation {
+    padding-top: 0;
+  }
 }

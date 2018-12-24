@@ -2,17 +2,24 @@
 @import "mixins";
 @import "centering";
 @import "visually-hidden";
+@import "button";
+@import "title";
+@import "text";
+@import "note";
+@import "body";
 @import "header";
 @import "navigation";
+@import "hero";
+@import "advantages";
+@import "explore";
+@import "integrations";
+@import "plans";
+@import "plan";
+@import "reviews";
 @import "footer";
 @import "footer-navigation";
 @import "subscription";
-
-body {
-  background-color: $bg-color;
-  font-family: monospace;
-  color: $primary-font-color;
-}
+@import "social";
 
 img {
   max-width: 100%;

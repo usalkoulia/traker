@@ -7,7 +7,7 @@
     <script src="js/picturefill.min.js" async></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
+  <body class="body">
     <!-- <div style="display: none">
       <include src="build/img/sprite.svg"></include>
     </div> -->
@@ -43,7 +43,7 @@
               <a class="navigation__link" href="#">Contact us</a>
             </li>
           </ul>
-          <ul class="navigation__list navigation__list--user">
+          <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link" href="#">Sign In</a>
             </li>
@@ -54,8 +54,143 @@
     </header>
 
     <main>
-      <!-- main -->
+      <h1 class="visually-hidden">Main contetnt</h1>
+
+      <section class="hero">
+        <div class="hero__wrapper centering">
+          <h2 class="hero__title">Maximum efficiency&nbsp;of&nbsp;your development team</h2>
+          <div class="hero__container">
+            <p class="hero__text">Joint remote work becomes more affordable due to transparent and maximum independence.</p>
+            <a class="hero__link hero__link--free button button--primary"href="#">Get started free</a>
+            <a class="hero__link hero__link--demo button button--transparent" href="#">Demo</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="advantages__wrapper centering">
+          <h2 class="advantages__main-title title title--big">How can you make the team more effective?</h2>
+          <div class="advantages__item">
+            <h3 class="advantages__title title title--medium">Easy use<br>Keep simple</h3>
+            <p class="advantages__text text">Riter supports work with various data scopes allowing you to scale and customize the workspace for all kinds of needs. Combine projects into groups for simultaneous work on them, create tasks and todos.</p>
+          </div>
+          <div class="advantages__item">
+            <h3 class="advantages__title title title--medium">Easy use<br>Keep simple</h3>
+            <p class="advantages__text text">Riter supports work with various data scopes allowing you to scale and customize the workspace for all kinds of needs. Combine projects into groups for simultaneous work on them, create tasks and todos.</p>
+          </div>
+          <div class="advantages__item">
+            <h3 class="advantages__title title title--medium">Easy use<br>Keep simple</h3>
+            <p class="advantages__text text">Riter supports work with various data scopes allowing you to scale and customize the workspace for all kinds of needs. Combine projects into groups for simultaneous work on them, create tasks and todos.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="explore">
+        <div class="explore__wrapper centering">
+          <h2 class="explore__title title title--medium">Explore Riter</h2>
+          <p class="explore__text text">Riter is focused on work with a higher level of organization. Do not work with each project separately, customizing the workflow place.</p>
+          <a class="explore__link" href="#" target="_blank" rel="noopener" aria-label=""></a>
+        </div>
+      </section>
+
+      <section class="integrations">
+        <div class="integrations__wrapper centering">
+          <span class="integrations__note note">Coming soon!</span>
+          <h2 class="integrations__title title title--big">Extensive third party integration</h2>
+          <p class="integrations__text text">The capabilities of Riter can be extended as far as desired thanks to its integration with all available services through full-featured GraphQL API and webhooks support.</p>
+        </div>
+      </section>
+
+      <section class="plans">
+        <div class="plans__wrapper centering">
+          <h2 class="plans__title title title--big">Simple plans. <span class="note">Special offer for beta users!</span></h2>
+            <div class="plans__list">
+              <div class="plans__item plan">
+                <h3 class="plan__title title title--small">Basic</h3>
+                <ul class="plan__list">
+                  <li class="plan__item">Unlimited projects</li>
+                  <li class="plan__item">Unlimited projects</li>
+                  <li class="plan__item">Unlimited projects</li>
+                  <li class="plan__item">Unlimited projects</li>
+                  <li class="plan__item">Unlimited projects</li>
+                  <li class="plan__item">Unlimited projects</li>
+                </ul>
+                <p class="plan__title title title--small">Free forever</p>
+                <p class="plan__note">No credit card required</p>
+                <a class="plan__link button button--primary" href="#">Sign up</a>
+              </div>
+              <div class="plans__item plan">
+                <h3 class="plan__title title title--small">Basic</h3>
+                <ul class="plan__list">
+                  <li class="plan__item">Unlimited projects</li>
+                  <li class="plan__item">Unlimited projects</li>
+                  <li class="plan__item">Unlimited projects</li>
+                  <li class="plan__item">Unlimited projects</li>
+                  <li class="plan__item">Unlimited projects</li>
+                  <li class="plan__item">Unlimited projects</li>
+                </ul>
+                <p class="plan__title title title--small">Free forever</p>
+                <p class="plan__note">No credit card required</p>
+                <a class="plan__link button button--primary" href="#">Sign up</a>
+              </div>
+              <div class="plans__item plan">
+                <h3 class="plan__title title title--small">Basic</h3>
+                <ul class="plan__list">
+                  <li class="plan__item">Unlimited projects</li>
+                  <li class="plan__item">Unlimited projects</li>
+                  <li class="plan__item">Unlimited projects</li>
+                  <li class="plan__item">Unlimited projects</li>
+                  <li class="plan__item">Unlimited projects</li>
+                  <li class="plan__item">Unlimited projects</li>
+                </ul>
+                <p class="plan__title title title--small">Free forever</p>
+                <p class="plan__note">No credit card required</p>
+                <a class="plan__link button button--primary" href="#">Sign up</a>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="reviews__wrapper centering">
+          <h2 class="reviews__title title title--medium">These companies have found success</h2>
+          <p class="reviews__note note">We're in beta and we hate fake feedbacks</p>
+        </div>
+        <div class="reviews__list">
+          <div class="reviews__item">
+            <p>The efficiency of our team work has increased since the first days of Riter usage. It literally predicts every our intention, so we do not have to waste a lot of time organizing the workflow as we used to do.</p>
+            <div class="reviews__item-wrapper">
+              <img src="" alt="">
+              <p>Darth Vader</p>
+              <p>of Dark Star</p>
+            </div>
+          </div>
+          <div class="reviews__item">
+            <p>The efficiency of our team work has increased since the first days of Riter usage. It literally predicts every our intention, so we do not have to waste a lot of time organizing the workflow as we used to do.</p>
+            <div class="reviews__item-wrapper">
+              <img src="" alt="">
+              <p>Darth Vader</p>
+              <p>of Dark Star</p>
+            </div>
+          </div>
+          <div class="reviews__item">
+            <p>The efficiency of our team work has increased since the first days of Riter usage. It literally predicts every our intention, so we do not have to waste a lot of time organizing the workflow as we used to do.</p>
+            <div class="reviews__item-wrapper">
+              <img src="" alt="">
+              <p>Darth Vader</p>
+              <p>of Dark Star</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="create-account">
+        <h2 class="create-account__title">Ready to get started?</h2>
+        <p class="create-account__note">Now you can use the basic tariff free forever</p>
+        <a class="create-account__link button button--primary" href="#">Create your own account</a>
+      </section>
     </main>
+
     <include src="source/_footer.html"></include>
     <script src="js/main.js"></script>
   </body>
