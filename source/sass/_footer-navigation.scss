@@ -1,7 +1,23 @@
-.footer-navigation__link,
-.footer__copyright {
+.footer-navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-navigation__item {
+  margin: 0 10px;
+}
+
+.footer-navigation__link {
   text-decoration: none;
   color: $secondary-font-color;
   font-size: 14px;
   line-height: 19px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .footer-navigation__list {
+    flex-direction: column;
+    text-align: left;
+  }
 }

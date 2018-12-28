@@ -9,6 +9,7 @@
 
 .subscription__wrapper {
   display: flex;
+  justify-content: center;
 }
 
 .subscription__input {
@@ -32,4 +33,10 @@
   line-height: 20px;
   padding: 10px 25px;
   border-radius: 0 4px 4px 0;
+}
+
+@media (min-width: $tablet-min-width) {
+  .subscription {
+    margin-right: 15px;
+  }
 }

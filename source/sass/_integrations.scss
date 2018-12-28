@@ -1,5 +1,9 @@
+.integrations {
+  background-color: #262626;
+}
+
 .integrations__wrapper {
-  padding: 20px 15px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -8,8 +12,35 @@
   font-size: 12px;
   letter-spacing: 1px;
   line-height: 16px;
+  margin-bottom: 20px;
 }
 
 .integrations__title {
   margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .integrations__wrapper {
+    padding: 100px;
+  }
+
+  .integrations__title {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .integrations__note {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .integrations__wrapper {
+    padding: 100px 200px;
+  }
+
+  .integrations__title {
+    width: 500px;
+  }
 }

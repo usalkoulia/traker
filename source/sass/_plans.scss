@@ -1,11 +1,40 @@
 .plans__wrapper {
-  padding: 20px 15px;
+  padding: 45px 20px 0 20px;
   text-align: center;
 }
 
 .plans__title {
+  margin-bottom: 45px;
+
   span {
     font-size: 30px;
     display: inline-block;
+  }
+}
+
+.plans__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-bottom: 50px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .plans__wrapper {
+    padding: 100px 25px 0 25px;
+  }
+
+  .plans__list {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .plans__wrapper {
+    padding: 145px 25px 0 25px;
+  }
+
+  .plans__list {
+    align-items: flex-start;
   }
 }

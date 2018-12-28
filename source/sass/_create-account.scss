@@ -1,0 +1,54 @@
+.create-account {
+  background-color: #262626;
+}
+
+.create-account__wrapper {
+  padding: 20px;
+  text-align: center;
+}
+
+.create-account__title {
+  font-size: 36px;
+  line-height: 39px;
+  margin-bottom: 15px;
+}
+
+.create-account__note {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .create-account__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 85px 25px;
+    text-align: left;
+  }
+
+  .create-account__container {
+    width: 40%;
+    margin-right: 30px;
+  }
+
+  .create-account__title {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 0;
+  }
+
+  .create-account__note {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .create-account__title {
+    font-size: 34px;
+    line-height: 49px;
+  }
+}

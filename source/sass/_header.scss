@@ -3,7 +3,7 @@
 }
 
 .header__wrapper {
-  padding: 20px 15px;
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -14,10 +14,19 @@
   text-decoration: none;
   color: $primary-font-color;
   white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 
   sup {
     color: $primary-color;
   }
+}
+
+.header__logo-image {
+  margin-right: 10px;
+  width: 30px;
 }
 
 .header__toggle {
@@ -37,14 +46,25 @@
 
 @media (min-width: $tablet-min-width) {
   .header__wrapper {
-    padding: 20px;
+    padding: 25px;
   }
 }
 
 @media (min-width: $desktop-min-width) {
+  .header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+  }
+
   .header__wrapper {
-    padding: 45px 20px;
+    padding: 30px 20px;
     flex-wrap: nowrap;
+  }
+
+  .header__logo-image {
+    width: 42px;
   }
 
   .header__toggle {

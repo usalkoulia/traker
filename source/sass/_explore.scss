@@ -1,5 +1,12 @@
 .explore__wrapper {
-  padding: 20px 15px;
+  padding: 20px;
+}
+
+.explore__container {
+  background-color: #3c3c3c;
+  padding: 25px;
+  border-radius: 7px;
+  cursor: pointer;
 }
 
 .explore__title {
@@ -8,4 +15,63 @@
 
 .explore__text {
   margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .explore__wrapper {
+    padding: 25px;
+  }
+
+  .explore__container {
+    padding: 30px 130px 30px 40px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      right: 50px;
+      width: 0;
+      height: 30px;
+      border: 2px solid #5c5c5c;
+      border-radius: 5px;
+    }
+
+    &::before {
+      top: calc(50% - 24px);
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      top: calc(50% - 5px);
+      transform: rotate(45deg);
+    }
+  }
+
+  .explore__title {
+    span {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .explore__wrapper {
+    padding: 50px;
+  }
+
+  .explore__container {
+    display: flex;
+    align-items: center;
+    padding-right: 140px;
+  }
+
+  .explore__title,
+  .explore__text {
+    margin-bottom: 0;
+  }
+
+  .explore__title {
+    margin-right: 50px;
+  }
 }

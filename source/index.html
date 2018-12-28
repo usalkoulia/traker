@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Демо-страница</title>
+    <title>Demo-page</title>
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js" async></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="body">
-    <!-- <div style="display: none">
-      <include src="build/img/sprite.svg"></include>
-    </div> -->
 
     <header class="header">
       <div class="header__wrapper centering">
 
-        <a class="header__logo" href="#">Riter <sup>&beta;</sup></a>
+        <a class="header__logo" href="#">
+          <img class="header__logo-image" src="img/logo.png" width="42" height="53" alt="">
+          <span>Riter <sup>&beta;</sup></span>
+        </a>
 
         <button class="header__toggle" type="button" name="button" aria-label="open menu">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
@@ -56,12 +56,12 @@
     <main>
       <h1 class="visually-hidden">Main contetnt</h1>
 
-      <section class="hero">
+      <section class="hero triangle-background">
         <div class="hero__wrapper centering">
           <h2 class="hero__title">Maximum efficiency&nbsp;of&nbsp;your development team</h2>
           <div class="hero__container">
             <p class="hero__text">Joint remote work becomes more affordable due to transparent and maximum independence.</p>
-            <a class="hero__link hero__link--free button button--primary"href="#">Get started free</a>
+            <a class="hero__link hero__link--free button button--primary" href="#">Get started free</a>
             <a class="hero__link hero__link--demo button button--transparent" href="#">Demo</a>
           </div>
         </div>
@@ -70,16 +70,22 @@
       <section class="advantages">
         <div class="advantages__wrapper centering">
           <h2 class="advantages__main-title title title--big">How can you make the team more effective?</h2>
-          <div class="advantages__item">
+        </div>
+        <div class="advantages__item advantages__item--one">
+          <div class="advantages__container centering">
             <h3 class="advantages__title title title--medium">Easy use<br>Keep simple</h3>
             <p class="advantages__text text">Riter supports work with various data scopes allowing you to scale and customize the workspace for all kinds of needs. Combine projects into groups for simultaneous work on them, create tasks and todos.</p>
           </div>
-          <div class="advantages__item">
-            <h3 class="advantages__title title title--medium">Easy use<br>Keep simple</h3>
-            <p class="advantages__text text">Riter supports work with various data scopes allowing you to scale and customize the workspace for all kinds of needs. Combine projects into groups for simultaneous work on them, create tasks and todos.</p>
+        </div>
+        <div class="advantages__item advantages__item--two">
+          <div class="advantages__container centering">
+            <h3 class="advantages__title title title--medium">Make your<br>own workflow</h3>
+            <p class="advantages__text text">With Riter you can organize the work of any complexity and be sure in its success thanks to versatile project management. Use a single tool for all the needs of your remote team.</p>
           </div>
-          <div class="advantages__item">
-            <h3 class="advantages__title title title--medium">Easy use<br>Keep simple</h3>
+        </div>
+        <div class="advantages__item advantages__item--three">
+          <div class="advantages__container centering">
+            <h3 class="advantages__title title title--medium">Predictive text input<br>and hotkeys</h3>
             <p class="advantages__text text">Riter supports work with various data scopes allowing you to scale and customize the workspace for all kinds of needs. Combine projects into groups for simultaneous work on them, create tasks and todos.</p>
           </div>
         </div>
@@ -87,68 +93,71 @@
 
       <section class="explore">
         <div class="explore__wrapper centering">
-          <h2 class="explore__title title title--medium">Explore Riter</h2>
-          <p class="explore__text text">Riter is focused on work with a higher level of organization. Do not work with each project separately, customizing the workflow place.</p>
-          <a class="explore__link" href="#" target="_blank" rel="noopener" aria-label=""></a>
+          <div class="explore__container">
+            <h2 class="explore__title title title--medium">Explore&nbsp;Riter <span>&rarr;</span></h2>
+            <p class="explore__text text">Riter is focused on work with a higher level of organization. Do not work with each project separately, customizing the workflow place.</p>
+            <a class="explore__link" href="#" target="_blank" rel="noopener" aria-label=""></a>
+          </div>
         </div>
       </section>
 
-      <section class="integrations">
+      <section class="integrations triangle-background">
         <div class="integrations__wrapper centering">
-          <span class="integrations__note note">Coming soon!</span>
-          <h2 class="integrations__title title title--big">Extensive third party integration</h2>
+          <p class="integrations__note note">Coming soon!</p>
+          <h2 class="integrations__title title title--medium">Extensive third party integration</h2>
           <p class="integrations__text text">The capabilities of Riter can be extended as far as desired thanks to its integration with all available services through full-featured GraphQL API and webhooks support.</p>
         </div>
       </section>
 
       <section class="plans">
         <div class="plans__wrapper centering">
-          <h2 class="plans__title title title--big">Simple plans. <span class="note">Special offer for beta users!</span></h2>
-            <div class="plans__list">
-              <div class="plans__item plan">
-                <h3 class="plan__title title title--small">Basic</h3>
-                <ul class="plan__list">
-                  <li class="plan__item">Unlimited projects</li>
-                  <li class="plan__item">Unlimited projects</li>
-                  <li class="plan__item">Unlimited projects</li>
-                  <li class="plan__item">Unlimited projects</li>
-                  <li class="plan__item">Unlimited projects</li>
-                  <li class="plan__item">Unlimited projects</li>
-                </ul>
-                <p class="plan__title title title--small">Free forever</p>
-                <p class="plan__note">No credit card required</p>
-                <a class="plan__link button button--primary" href="#">Sign up</a>
-              </div>
-              <div class="plans__item plan">
-                <h3 class="plan__title title title--small">Basic</h3>
-                <ul class="plan__list">
-                  <li class="plan__item">Unlimited projects</li>
-                  <li class="plan__item">Unlimited projects</li>
-                  <li class="plan__item">Unlimited projects</li>
-                  <li class="plan__item">Unlimited projects</li>
-                  <li class="plan__item">Unlimited projects</li>
-                  <li class="plan__item">Unlimited projects</li>
-                </ul>
-                <p class="plan__title title title--small">Free forever</p>
-                <p class="plan__note">No credit card required</p>
-                <a class="plan__link button button--primary" href="#">Sign up</a>
-              </div>
-              <div class="plans__item plan">
-                <h3 class="plan__title title title--small">Basic</h3>
-                <ul class="plan__list">
-                  <li class="plan__item">Unlimited projects</li>
-                  <li class="plan__item">Unlimited projects</li>
-                  <li class="plan__item">Unlimited projects</li>
-                  <li class="plan__item">Unlimited projects</li>
-                  <li class="plan__item">Unlimited projects</li>
-                  <li class="plan__item">Unlimited projects</li>
-                </ul>
-                <p class="plan__title title title--small">Free forever</p>
-                <p class="plan__note">No credit card required</p>
-                <a class="plan__link button button--primary" href="#">Sign up</a>
-              </div>
-            </div>
+          <h2 class="plans__title title title--medium">Simple plans.
+            <span class="note">Special offer for beta users!</span>
+          </h2>
         </div>
+          <div class="plans__list">
+            <div class="plans__item plan">
+              <h3 class="plan__main-title title title--small">Basic</h3>
+              <ul class="plan__list">
+                <li class="plan__item">Unlimited projects</li>
+                <li class="plan__item">Unlimited users</li>
+                <li class="plan__item">Separate subdomain</li>
+                <li class="plan__item">Full API</li>
+                <li class="plan__item">Up to 10 free connected bots</li>
+                <li class="plan__item">Full time support</li>
+              </ul>
+              <p class="plan__title title title--small">Free forever</p>
+              <p class="plan__note">No credit card required</p>
+              <a class="plan__link button button--primary" href="#">Sign up</a>
+            </div>
+            <div class="plans__item plan">
+              <h3 class="plan__main-title title title--small">White label</h3>
+              <ul class="plan__list">
+                <li class="plan__item">Everything from basic plan</li>
+                <li class="plan__item">Custom domain</li>
+                <li class="plan__item">Custom design</li>
+                <li class="plan__item">Unlimited connected bots</li>
+              </ul>
+              <p class="plan__note">For all companies who will join Riter after release first 10 bots are free and then</p>
+              <p class="plan__title title title--small">$10 per bot <span>for all further bots</span></p>
+              <p class="plan__note">All companies who stay with us during beta will have a special upper price limit:</p>
+              <p class="plan__title plan__title--green title title--small">$100 per month</p>
+              <p class="plan__note plan__note--big">For any number of bots</p>
+              <a class="plan__link button button--primary" href="#">Trial Sign Up</a>
+            </div>
+            <div class="plans__item plan">
+              <h3 class="plan__main-title title title--small">Enterprise</h3>
+              <ul class="plan__list">
+                <li class="plan__item">Everything from white label plan</li>
+                <li class="plan__item">Dedicated server</li>
+                <li class="plan__item">Custom OAuth 2.0 integration</li>
+                <li class="plan__item">LDAP / Active directory integration</li>
+                <li class="plan__item">SAML 2.0 Single Sign-On</li>
+                <li class="plan__item">Two-factor authentication</li>
+              </ul>
+              <a class="plan__link button button--primary" href="#">Email us</a>
+            </div>
+          </div>
       </section>
 
       <section class="reviews">
@@ -158,36 +167,26 @@
         </div>
         <div class="reviews__list">
           <div class="reviews__item">
-            <p>The efficiency of our team work has increased since the first days of Riter usage. It literally predicts every our intention, so we do not have to waste a lot of time organizing the workflow as we used to do.</p>
+            <p class="reviews__text">The efficiency of our team work has increased since the first days of Riter usage. It literally predicts every our intention, so we do not have to waste a lot of time organizing the workflow as we used to do.</p>
             <div class="reviews__item-wrapper">
-              <img src="" alt="">
-              <p>Darth Vader</p>
-              <p>of Dark Star</p>
-            </div>
-          </div>
-          <div class="reviews__item">
-            <p>The efficiency of our team work has increased since the first days of Riter usage. It literally predicts every our intention, so we do not have to waste a lot of time organizing the workflow as we used to do.</p>
-            <div class="reviews__item-wrapper">
-              <img src="" alt="">
-              <p>Darth Vader</p>
-              <p>of Dark Star</p>
-            </div>
-          </div>
-          <div class="reviews__item">
-            <p>The efficiency of our team work has increased since the first days of Riter usage. It literally predicts every our intention, so we do not have to waste a lot of time organizing the workflow as we used to do.</p>
-            <div class="reviews__item-wrapper">
-              <img src="" alt="">
-              <p>Darth Vader</p>
-              <p>of Dark Star</p>
+              <img class="reviews__avatar" src="https://via.placeholder.com/60x60" alt="">
+              <div class="reviews__text-wrapper">
+                <p class="reviews__author">Darth Vader</p>
+                <p class="reviews__position">of Dark Star</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="create-account">
-        <h2 class="create-account__title">Ready to get started?</h2>
-        <p class="create-account__note">Now you can use the basic tariff free forever</p>
-        <a class="create-account__link button button--primary" href="#">Create your own account</a>
+      <section class="create-account triangle-background">
+        <div class="create-account__wrapper centering">
+          <div class="create-account__container">
+            <h2 class="create-account__title title">Ready to get started?</h2>
+            <p class="create-account__note note">Now you can use the basic tariff free forever</p>
+          </div>
+          <a class="create-account__link button button--primary" href="#">Create your own account</a>
+        </div>
       </section>
     </main>
 

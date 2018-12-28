@@ -3,32 +3,98 @@
 }
 
 .advantages__wrapper {
-  padding: 20px 15px;
+  padding: 20px;
+  padding-top: 50px;
 }
 
 .advantages__main-title {
   text-align: center;
-  margin-bottom: 35px;
+  max-width: 400px;
+  margin: 0 auto 50px auto;
 }
 
 .advantages__item {
+  padding-bottom: 200px;
   margin-bottom: 100px;
+
+  &--one {
+    background: url("https://via.placeholder.com/280x150") center bottom no-repeat;
+  }
+
+  &--two {
+    background: url("https://via.placeholder.com/300x150") center bottom no-repeat;
+  }
+
+  &--three {
+    background: url("https://via.placeholder.com/400x150") center bottom no-repeat;
+  }
+}
+
+.advantages__container {
+  > * {
+    padding: 0 20px;
+  }
 }
 
 .advantages__title {
   margin-bottom: 15px;
 }
 
-@media (min-width: $desktop-min-width) {
+@media (min-width: $tablet-min-width) {
   .advantages__wrapper {
-    padding: 140px 90px 100px 90px;
+    padding: 25px;
+    padding-top: 100px;
   }
 
   .advantages__main-title {
-    margin-bottom: 195px;
+    max-width: 440px;
+    margin-bottom: 150px;
   }
 
   .advantages__item {
-    margin-bottom: 300px;
+    margin-bottom: 250px;
+    padding: 0;
+
+    &--one {
+      background: url("https://via.placeholder.com/280x150") calc(50% + 140px) center no-repeat,
+        url("https://via.placeholder.com/280x150") calc(50% + 440px) center no-repeat;
+
+      .advantages__container {
+        > * {
+          padding-right: 60%;
+        }
+      }
+    }
+
+    &--two {
+      background: url("https://via.placeholder.com/526x315") calc(50% - 263px) center no-repeat;
+
+      .advantages__container {
+        > * {
+          padding-left: 60%;
+        }
+      }
+    }
+
+    &--three {
+      background: url("https://via.placeholder.com/800x316") calc(50% + 400px) center no-repeat;
+      margin-bottom: 150px;
+
+      .advantages__container {
+        > * {
+          padding-right: 60%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .advantages__wrapper {
+    padding-top: 140px;
+  }
+
+  .advantages__main-title {
+    max-width: 550px;
   }
 }

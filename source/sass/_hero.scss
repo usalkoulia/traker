@@ -1,5 +1,5 @@
 .hero__wrapper {
-  padding: 20px 15px;
+  padding: 20px;
 }
 
 .hero__title {
@@ -10,20 +10,27 @@
 
 .hero__text {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 27px;
   font-weight: 200;
   letter-spacing: 1px;
   color: $secondary-font-color;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .hero__link {
   &--free {
-    margin-right: 10px;
+    margin-right: 5px;
   }
 }
 
 @media (min-width: $tablet-min-width) {
+  .hero {
+    min-height: 600px;
+    background: url("https://via.placeholder.com/780x540") center 370% no-repeat,
+      url("../img/pattern.jpg");
+    background-size: auto, 10%;
+  }
+
   .hero__wrapper {
     display: flex;
     justify-content: space-between;
@@ -34,33 +41,43 @@
   .hero__container {
     width: 47%;
     border: 1px solid pink;
+    margin-bottom: 0;
   }
 
   .hero__title {
-    font-size: 40px;
+    font-size: 38px;
+    line-height: 50px;
   }
 
   .hero__text {
-    font-size: 23px;
+    font-size: 19px;
   }
 
   .hero__link {
     &--free {
-      padding: 12px 40px;
-    }
-
-    &--demo {
-      padding: 12px 30px;
+      margin-right: 10px;
     }
   }
 }
 
 @media (min-width: $desktop-min-width) {
+  .hero {
+    min-height: 700px;
+    background: url("https://via.placeholder.com/860x544") center 230% no-repeat,
+      url("../img/pattern.jpg");
+    background-size: auto, 10%;
+  }
+
   .hero__wrapper {
     padding: 45px 90px;
+    padding-top: 150px;
   }
 
   .hero__title {
-    font-size: 50px;
+    font-size: 48px;
+  }
+
+  .hero__text {
+    font-size: 23px;
   }
 }
